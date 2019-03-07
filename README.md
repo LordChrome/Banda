@@ -1,2 +1,1 @@
-# Using-Crowd-for-Predicting-
-A crowd sourcing algorithm for predicting outcome of football match
+Based on how people place theirs bets the algorithm consists of diffrent version each established on the basis of what people consider while gambling e.g teams position in the league, the formation they are going to play with, both team previous performances such as their last matches head to head, home and away matches, last games played, availability of key players to mention a few. By taking a correct ratio of each versions results currently the success rate is at 83.333%. 
