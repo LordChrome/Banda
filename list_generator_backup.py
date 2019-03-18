@@ -13,16 +13,6 @@ def list_creator(teamA_probability,teamB_probability):
  teamA = list(range(1,((teamA_probability[0]*100) + (teamA_probability[1]*100) + (teamA_probability[2]*100)+1)))
  teamB = list(range(1,((teamB_probability[0]*100) + (teamB_probability[1] *100)+ (teamB_probability[2]*100)+1)))
  
- def outer_range(teamA, teamB):
-   if (teamA_probability[0] + teamA_probability[1] + teamA_probability[2]) == (teamB_probability[0] + teamB_probability[1] + teamB_probability[2]):
-     f = (teamA_probability[0] + teamA_probability[1] + teamA_probability[2])
-   elif (teamA_probability[0] + teamA_probability[1] + teamA_probability[2]) > (teamB_probability[0] + teamB_probability[1] + teamB_probability[2]):
-     f = (teamA_probability[0] + teamA_probability[1] + teamA_probability[2])
-   elif (teamA_probability[0] + teamA_probability[1] + teamA_probability[2] ) < (teamB_probability[0] + teamB_probability[1] + teamB_probability[2]):
-     f = (teamB_probability[0] + teamB_probability[1] + teamB_probability[2])
-
-   return f
-
  while ((len(teamA_values_win) != teamA_probability[0])):
     x = random.randint(1, outer_range(teamA, teamB))
     if x in teamA:
